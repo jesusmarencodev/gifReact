@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
-export const GifExpertApp = () => {
+export const GifExpertApp = ({ defaultCategories = []}) => {
 
 
 
-	const [categories, setCategories] = useState(['Dragon Ball']);
+	const [categories, setCategories] = useState(defaultCategories);
 
 /* 	const handleAdd = () => {
 		//formar de mutar con setState un arreglo

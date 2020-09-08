@@ -8,15 +8,12 @@ export const useFetchGifs = (category) => {
 	})
 
 	useEffect(() => {
-		/*getGifts(category)
-			.then(img => setImages(img)); forma no resumida */ 
-
 			getGifts(category)
 				.then( imgs =>{
 					setState({
 						data : imgs,
 						loading : false
-					})
+					});
 				});
 	}, [category])
 
