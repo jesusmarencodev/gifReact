@@ -18,6 +18,7 @@ export const GifExpertApp = ({ defaultCategories = []}) => {
 	return (
 		<>
 			<h2>GifExpertApp</h2>
+			<h3>{process.env.REACT_APP_ENV}</h3>
 			<AddCategory setCategories={ setCategories } />
 			<hr/>
 				{
